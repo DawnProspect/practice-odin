@@ -79,3 +79,46 @@ Itu langkahnya lumayan panjang
 Namun ada catatan juga untuk perbandingan kalau huruf kapital misalnya A dibandingkan dengan huruf kecil a, itu pasti tidak sama, lalu siapa yang paling besar? yang paling besar si lowercasenya karena di internal encoding table JavaScript pakai Unicode
 
 */
+
+// ! PEMISAH
+
+// * COMPARISON OF DIFFERENT TYPES
+
+/* 
+
+Ketika membandingkan type value yang berbeda, JavaScript akan convert value nya ke angka
+
+misalnya
+
+alert( '2' > 1 ) jawabannya pasti true karena string '2' dijadikan angka
+
+alert( '01' == 1 ) jawabannya pasti true karena string '01' dijadikan angka
+
+Untuk boolean values true menjadi 1 dan false menjadi 0
+
+alert( true == 1 ) // true
+alert( false == 0 ) // true
+
+*/
+
+// ! PEMISAH
+
+// * STRICT OF EQUALITY
+
+/* 
+
+Regular equality (==) itu ada masalah, dia tidak bisa membedakan 0 dengan false
+
+alert( 0 == false ) // true
+
+alert('' == false ) // true
+
+ini terjadi karena value yang dibandingkan akan di convert sama operator ==. Seperti yang ditunjukkan, empty string itu akan di convert menjadi 0
+
+Terus kalau misalnya kita mau membedakan 0 dari false bagaimana?
+
+disini kita menggunakan strict equality (===)
+
+dengan strict equality operator ini === dia akan mengecek kesamaan tanpa akan mengkonversi type data
+
+*/
