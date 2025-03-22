@@ -121,4 +121,47 @@ disini kita menggunakan strict equality (===)
 
 dengan strict equality operator ini === dia akan mengecek kesamaan tanpa akan mengkonversi type data
 
+Dalam hal lain jika a dan b adalah value tipe yang berbeda maka a === b akan mengembalikan false tanpa konversi tipe datanya
+
+misalnya alert( 0 === false ) pasti hasilnya akan false karena berbeda type
+
+ada juga namanya strict non-equality operator !== yang berkaitan dengan !=
+
+strict equality operator memang lebih panjang untuk ditulis, tetapi membuat kita lebih pasti apa yang dibandingkan dan juga memperkecil kemungkinan untuk error
+
+*/
+
+// ! PEMISAH
+
+// * COMPARISON WITH NULL AND UNDEFINED
+
+/* 
+
+Untuk strict equality check ===
+
+Values nya berbeda karena type mereka berbeda
+
+alert(null === undefined ) hasilnya false
+
+kalau untuk non-strict check ==
+
+Anehnya untuk non-strict check mereka sama kecuali value yang lain
+
+alert( null == undefined ) hasilnya true
+
+Kalau untuk perbandingan matematika dan lain lainnya
+
+null/undefined akan di convert menjadi angka
+
+null menjadi 0
+undefined menjadi NaN
+
+Contoh aneh
+
+alert( null > 0 ) jawabannya false
+alert( null == 0 ) jawabannya false
+alert ( null >= 0 ) jawabannya true
+
+alasan yang terakhir menjadi true karena null di convert menjadi 0
+
 */
