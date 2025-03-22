@@ -165,3 +165,48 @@ alert ( null >= 0 ) jawabannya true
 alasan yang terakhir menjadi true karena null di convert menjadi 0
 
 */
+
+// ! PEMISAH
+
+// * SUMMARY
+
+/* 
+
+- Perbandingan akan mengembalikan value boolean
+- Strings dibadingkan satu satu huruf yang ada di kata tersebut
+- Ketika menggunakan non strict equality check, perbandingan akan konversi value menjadi angka
+
+*/
+
+
+// * TASKS
+// Comparisons
+
+/* 
+
+1. 5 > 4 True
+2. "apple" > "pineapple" false
+3. "2" > "12" True
+4. undefined == null true
+5. undefined === null false
+6. null == "\n0\n" false
+7. null === +"\n0\n" false
+
+
+*/
+
+// JAWABAN
+
+/* 
+
+
+    Obviously, true.
+    Dictionary comparison, hence false. "a" is smaller than "p".
+    Again, dictionary comparison, first char "2" is greater than the first char "1".
+    Values null and undefined equal each other only.
+    Strict equality is strict. Different types from both sides lead to false.
+    Similar to (4), null only equals undefined.
+    Strict equality of different types.
+
+
+*/
