@@ -62,3 +62,7 @@ console.log(name2)
 5. What is the term for joining strings together?
 
 concatenation
+
+6. Which type of quote lets you embed variables/expressions in a string?
+
+It is called template literals which is also known as template strings which allows variables and expression in a string, and the type of quotes it uses is backticks ``
