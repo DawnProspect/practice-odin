@@ -66,3 +66,29 @@ concatenation
 6. Which type of quote lets you embed variables/expressions in a string?
 
 It is called template literals which is also known as template strings which allows variables and expression in a string, and the type of quotes it uses is backticks ``
+
+7. How do you use escape characters in a string?
+
+Either use backlash or use different quotes on the string to diffrentiate for example 'He said "i like this food"
+
+8. What is the difference between the slice/substring string methods?
+
+slice() will extract part of string and returns extracted part in a new string, if index is negative then it will count from the back of that words
+
+e.g
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(7, 13);
+
+let text = "Hello, World!";
+console.log(text.slice(0, 5)); // Output: "Hello"
+console.log(text.slice(-6, -1)); // Output: "World"
+
+
+Substring is also similiar but the difference is slice supports negative index while substring doesnt, substring also automatically swap values if start is more bigger than end while slice doesnt
+
+e.g
+
+let text = "Hello, World!";
+console.log(text.substring(0, 5)); // Output: "Hello"
+console.log(text.substring(5, 0)); // Output: "Hello" (urutan otomatis ditukar)
+console.log(text.substring(-3, 5)); // Output: "Hello" (negatif dianggap 0)
