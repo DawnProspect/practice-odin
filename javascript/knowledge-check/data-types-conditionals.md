@@ -93,4 +93,4 @@ console.log(text.substring(0, 5)); // Output: "Hello"
 console.log(text.substring(5, 0)); // Output: "Hello" (urutan otomatis ditukar)
 console.log(text.substring(-3, 5)); // Output: "Hello" (negatif dianggap 0)
 
-tes editing
+tes editing di hp termasuk tidak
