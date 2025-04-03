@@ -100,3 +100,124 @@ console.log(text.substring(-3, 5)); // Output: "Hello" (negatif dianggap 0)
 && AND
 
 ! NOT
+
+10. What are truthy and falsy values?
+
+Truthy values (Anything that is not falsy)
+
+- Non empty strings like "Hello"
+- Non zero numbers like 42, -3.14
+- Arrays []
+- Objects {}
+- Functions function(){}
+
+Falsy values
+
+Value that is considered false when evaluated in a boolean context.
+
+- false (literal boolean false)
+- 0 (number zero)
+- -0 (negative number zero)
+- null
+- undefined
+- NaN (Not a Number)
+
+11. What are conditionals?
+
+Conditionals are statements that allow code to make decision based on certain condition, the program will execute different code paths depending on whether a condition evaluates to true or false
+
+
+12. What is the syntax for an if/else conditional?
+
+
+if (condition) {
+  /* code to run if condition is true */
+} else {
+  /* run some other code instead */
+}
+
+source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Conditionals#basic_if...else_syntax
+
+
+13. What is the syntax for a switch statement?
+
+switch (expression) {
+    case choice1
+    break
+    case choice2
+    break
+    so...on
+    default 
+    break
+}
+
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Conditionals#switch_statements
+
+
+14. What is the syntax for a ternary operator?
+
+const move = isCarMoving ? `The car is currently moving` : `Car is stationary`
+
+The condition after question mark is if its true, so its in a sence where if its true it will show the first value, if its false it will show the second value
+
+15. What is nesting?
+
+Nesting refers to placing one structure inside another of the same type, in JavaScript it means putting one statement or bloack of code inside another like nested conditionals, loops, or functions.
+
+Nested Conditionals
+
+Example of Nested Conditionals
+
+```js
+let age = 24
+
+let hasMoney = true
+
+let money = 20000
+
+if (age > 20) {
+    if (hasMoney) {
+        if (money > 0) {
+            console.log("Your bank has been charged successfully")
+        } else {
+            console.log("Make sure you have enough money")
+        }
+    } else {
+        console.log("You do not have enough money")
+    }
+} else {
+    console.log("You are not old enough")
+}
+
+
+```
+
+
+Example of Nested Loops
+
+```js
+
+for (let i = 0; i <= 3; i++) {
+    for(let j = 0; j <= 2; j++) {
+        console.log(`Halo i ${i} dan j${j}`)
+    }
+}
+
+
+```
+
+Example of Nested Functions
+
+```js
+
+function outerFunction(name) {
+    function innerFunction(greeting) {
+        console.log(`${greeting}, ${name}!`);
+    }
+    innerFunction("Hello");
+}
+
+outerFunction("Who?");
+
+
+```
