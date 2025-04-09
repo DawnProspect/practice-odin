@@ -56,3 +56,31 @@ The main reason why its important to know HTML is because it allows us to create
 - You can significantly increase the control and flexibility that you have with your website
 
 - You will be able design your website with tknowledge of this code
+
+
+## What is CSS
+
+CSS is a style sheet language focused on improving the presentation of HTML elements. While CSS is static programming language, it can make website appear more pleasing and modern. If you want to design and make your website stylish, have a basic understanding of CSS can help a lot.
+
+What can you do with CSS?
+
+You can change some of the text colour in a web page, basic CSS allow you to add style code to HTML code on your page. You can also add layout or formatting website while also improving the look of the website and HTML.
+
+## JavaScript
+
+JavaScript is one of the most important and popular programming languages for websites, because it plays a crucial role to make a site becomes more interactive, which makes it the most complex of the three standard programming languages. With these three programming languages combined, you can add more interactivity to the CSS and HTML elements on websites, which highly recommended to appeal to the modern customer.
+
+With a basic understanding of JavaScript, you can manipulate features of website to perform wide range of actions.
+
+What can you do with JavaScript?
+
+- You can create calculator for websites
+- You can create keyboard shortcuts which allows users to navigate to other page
+- Play animations when users scroll down the page
+
+
+## Good resources to study
+
+https://www.freecodecamp.org/news/html-css-and-javascript-explained-for-beginners/
+
+https://www.brytdesigns.com/html-css-javascript-whats-the-difference
